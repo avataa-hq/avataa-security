@@ -1,0 +1,30 @@
+[project]
+name = "security-middleware"
+version = "3.0.5"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp==3.12.15",
+    "fastapi==0.119.0",
+    "pydantic==1.10.24",
+    "pyjwt[crypto]==2.10.1",
+    "python-keycloak==5.8.1",
+    "redis==6.4.0",
+    "sqlalchemy[asyncio]==2.0.44",
+    "uvicorn==0.37.0",
+]
+
+[dependency-groups]
+dev = [
+]
+lint = [
+    "ruff==0.14.0",
+]
+tests = [
+]
+security = [
+    "pip-audit==2.9.0",
+]
+migrations = [
+]
